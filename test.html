@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="src/hash-router.min.js"></script>
+</head>
+<body>
+	<a href="#">home</a><br><br>
+
+	<a href="#foo">foo</a><br>
+	<a href="#foo?a">foo?a</a><br>
+	<a href="#foo?a=1">foo?a=1</a><br><br>
+
+	<a href="#foo/foo">foo/foo</a><br>
+	<a href="#foo/foo?a&b">foo/foo?a&b</a><br>
+	<a href="#foo/foo?a=1&b=2">foo/foo?a=1&b=2</a><br>
+	<script>
+		var router = new HashRouter();
+
+		router.add('', function () {
+			alert('home');
+		});
+
+		router.add('foo', function (params) {
+			alert('foo a=' + params.a);
+		});
+
+		router.add('foo/foo', function (params) {
+			alert('foo a=' + params.a + ' b=' + params.b);
+		});
+
+	</script>
+</body>
+</html>

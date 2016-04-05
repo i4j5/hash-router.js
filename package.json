@@ -1,0 +1,17 @@
+{
+  "name": "hash-router.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/hash-router.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/i4j5/hash-router.js.git"
+  },
+  "author": "Aleksandr Sazhin <i4j5@ya.ru>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "~3.9.1",
+    "gulp-uglify": "~1.5.3",
+    "gulp-rename": "~1.2.2"
+  }
+}
